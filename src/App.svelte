@@ -1,10 +1,14 @@
 <script>
 	import Tailwindcss from './Tailwindcss.svelte';
+	import Login from './components/Login.svelte';
+	import Signup from './components/Signup.svelte';
 </script>
 <Tailwindcss />
+<Signup />
+<Login />
 
 <main>
-	<!-- Full width column -->
+
 	<div class="flex mb-4">
 		<div class="flex-1 bg-gray-500 h-12"></div>
 	</div>
