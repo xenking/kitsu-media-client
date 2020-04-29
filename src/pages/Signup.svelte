@@ -4,7 +4,7 @@
     }
 </style>
 
-<div class="flex bg-indigo-700 w-full h-screen">
+<div class="flex bg-indigo-700 w-full h-screen" style="background-image: url('/i/background_image.jpg')">
     <div class="w-1/2">
         <div class="flex-col text-white m-8 ml-12 px-10 border-white">
             <div class="text-4xl text-yellow-500 uppercase font-bold">
@@ -48,7 +48,7 @@
             </div>
 
             <div>
-                <label class="flex justify-start items-start cursor-pointer">
+                <label class="flex justify-start items-start cursor-pointer transition duration-500">
                     <div class="bg-white border-2 rounded border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
                         <input type="checkbox" class="opacity-0 absolute">
                         <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
@@ -56,7 +56,7 @@
                     <div class="select-none">I agree to sell my mother</div>
                 </label>
             </div>
-            <button class="shadow bg-indigo-700 h-12 mt-6 w-1/4 rounded-lg text-center text-white hover:bg-indigo-800">
+            <button class="transition duration-500 shadow bg-indigo-700 h-12 mt-6 w-1/4 rounded-lg text-center text-white hover:bg-indigo-800">
                 Sign up
             </button>
         </div>
