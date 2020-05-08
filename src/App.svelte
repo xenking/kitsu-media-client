@@ -7,7 +7,7 @@
 	import Menu from './components/Menu.svelte';
 	import AdminPanel from './components/AdminPanel.svelte';
 
-	import Home from './pages/Home.svelte';
+	import Home from './pages/Anime.svelte';
 	import Profile from './pages/Profile.svelte';
 	import Signup from './pages/Signup.svelte';
 	import News from './pages/News.svelte';
@@ -20,9 +20,9 @@
 
 <main>
 	<div class="flex flex-col md:flex-row">
-		<AdminPanel/>
-		<Menu/>
 		<Router>
+			<AdminPanel/>
+			<Menu/>
 			<Route path="/" component="{Home}"/>
 			<Route path="/profile" component="{Profile}"/>
 			<Route path="/news" component="{News}"/>
