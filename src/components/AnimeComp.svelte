@@ -2,7 +2,7 @@
     <div class="w-full h-56 bg-gray-600">
     </div>
     <div class="text-lg text-black">
-        <span class="hover:text-yellow-500 hover:underline">Anime name</span>
+        <a href="/watch"><span class="hover:text-yellow-500 hover:underline">Anime name</span></a>
     </div>
     <div class="text-lg text-gray-600">
         <span>Studio name</span>

@@ -25,6 +25,7 @@
     "@tailwindcss/custom-forms": "^0.2.1",
     "page": "^1.11.6",
     "sirv-cli": "^0.4.4",
-    "svelte-feather-icons": "latest"
+    "svelte-feather-icons": "latest",
+    "svelte-headroom": "^2.2.1"
   }
 }

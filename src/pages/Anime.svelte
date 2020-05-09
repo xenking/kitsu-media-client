@@ -19,6 +19,16 @@
         <AnimeComp/>
         <AnimeComp/>
         <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
+        <AnimeComp/>
     </div>
     <div class="w-full md:h-0 h-20">
     </div>

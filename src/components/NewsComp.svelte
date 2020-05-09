@@ -11,7 +11,7 @@
         <div class="w-full">
             <span>A lot of some text</span>
         </div>
-        <div class="flex-1 w-full lg:mt-24">
+        <div class="flex-1 w-full lg:mt-32">
             <div class="inline-block mt-4">
                 <span>Date</span>
             </div>

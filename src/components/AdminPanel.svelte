@@ -1,7 +1,10 @@
 <script>
-    import {BellIcon, UserIcon} from 'svelte-feather-icons'
+    import {BellIcon, UserIcon} from 'svelte-feather-icons';
+
 </script>
-<nav class="bg-gray-800 pt-2 md:pt-0 pb-1 mt-0 md:h-20 h-auto fixed w-full z-20 md:mb-2">
+
+
+<nav class="admin-panel bg-gray-800 pt-2 md:pt-0 pb-1 mt-0 md:h-20 h-auto fixed w-full z-20 md:mb-2">
 
     <div class="flex flex-wrap items-center">
         <div class="md:w-64 h-20 float-left"></div>
@@ -21,7 +24,7 @@
         <div class="flex w-full content-around justify-between md:w-1/3 md:justify-end">
             <ul class="list-reset flex-1 md:flex-none items-center">
                 <li class="flex-1 md:flex-none md:mr-3 float-left">
-                    <a class="inline-block py-4 px-4 mt-2 hover:bg-gray-600 text-white no-underline focus:bg-gray-900 focus:text-yellow-500"
+                    <a class="inline-block py-4 px-4 mt-2 hover:bg-gray-600 hover:text-yellow-500 text-white no-underline focus:bg-gray-900 focus:text-yellow-500"
                        href="#">
                         <BellIcon size="24 "/>
                     </a>
@@ -29,7 +32,7 @@
                 <li class="flex-1 md:flex-none md:ml-0 float-right md:mr-3 m-2">
                     <div class="relative inline-block cursor-pointer">
                         <button onclick="toggleDD('myDropdown')"
-                                class="drop-button hover:bg-gray-600 text-white focus:outline-none focus:text-yellow-500 focus:bg-gray-900">
+                                class="drop-button hover:bg-gray-600 hover:text-yellow-500 text-white focus:outline-none focus:text-yellow-500 focus:bg-gray-900">
                             <div class="inline-block align-middle m-2">
                                 <UserIcon size="32"/>
                             </div>
