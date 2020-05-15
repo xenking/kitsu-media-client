@@ -2,7 +2,7 @@
     import {HomeIcon, UserIcon, CalendarIcon} from 'svelte-feather-icons';
 </script>
 
-<div class="bg-gray-800 shadow-lg h-16 fixed bottom-0 md:relative md:h-full z-50 w-full pt-1 md:w-64 ">
+<div class="bg-gray-800 shadow-lg h-16 fixed bottom-0 md:relative md:h-full z-50 w-full pt-1 md:w-64">
     <div class="md:w-56 md:float-none md:fixed md:left-0 md:top-0 md:content-center text-center justify-between md:h-full bg-gray-800 md:bg-gray-700">
         <div class="md:flex hidden md:w-10/12 justify-center md:justify-start m-6 ml-2 pl-3 cursor-pointer ">
             <a href="#">

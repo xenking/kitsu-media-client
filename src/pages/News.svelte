@@ -2,10 +2,10 @@
     import NewsComp from "../components/NewsComp.svelte";
 </script>
 
-<div class="flex-col w-full md:w-7/12 lg:w-10/12 w-full md:m-2">
+<div class="flex-col w-full md:w-8/12 lg:w-10/12 md:m-2">
     <div class="w-full md:h-16 h-40">
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="grid grid-cols-1 lg:grid-cols-2 p-4">
         <NewsComp/>
         <NewsComp/>
         <NewsComp/>

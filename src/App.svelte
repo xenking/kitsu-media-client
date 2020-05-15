@@ -9,12 +9,12 @@
 
 	import Home from './pages/Anime.svelte';
 	import Profile from './pages/Profile.svelte';
-	import Signup from './pages/Signup.svelte';
 	import News from './pages/News.svelte';
 	import Tailwindcss from "./Tailwindcss.svelte";
 	import NotFoundPage from "./pages/NotFoundPage.svelte";
 	import VanishingHeader from "./components/VanishingHeader.svelte";
-	import Watch from "./pages/AnimeWatch.svelte"
+	import Watch from "./pages/AnimeWatch.svelte";
+	import Topic from "./pages/TopicPage.svelte"
 
 </script>
 
@@ -32,6 +32,7 @@
 			<Route path="/profile" component="{Profile}"/>
 			<Route path="/news" component="{News}"/>
 			<Route path="/watch" component="{Watch}"/>
+			<Route path="/topic" component="{Topic}"/>
 			<NotFound>
 				<NotFoundPage/>
 			</NotFound>
