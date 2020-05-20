@@ -6,7 +6,7 @@
 
 	import Menu from './components/Menu.svelte';
 	import AdminPanel from './components/AdminPanel.svelte';
-
+	import Signup from './pages/Signup.svelte';
 	import Home from './pages/Anime.svelte';
 	import Profile from './pages/Profile.svelte';
 	import News from './pages/News.svelte';

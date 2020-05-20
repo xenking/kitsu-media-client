@@ -4,10 +4,10 @@
 </script>
 
 
-<nav class="admin-panel bg-gray-800 pt-2 md:pt-0 pb-1 mt-0 md:h-20 h-auto fixed w-full z-20 md:mb-2">
+<nav class="admin-panel bg-gray-800 pt-2 md:pt-0 pb-1 mt-0 h-auto fixed w-full z-20">
 
-    <div class="flex flex-wrap items-center">
-        <div class="md:w-64 h-20 float-left"></div>
+    <div class="flex flex-wrap items-center md:h-12 h-22">
+        <div class="md:w-32 float-left"></div>
         <div class="flex flex-1 md:w-1/3 justify-center md:justify-start text-white px-2">
                 <span class="relative md:ml-32 w-full">
                     <input type="search" placeholder="Search"
@@ -23,13 +23,13 @@
 
         <div class="flex w-full content-around justify-between md:w-1/3 md:justify-end">
             <ul class="list-reset flex-1 md:flex-none items-center">
-                <li class="flex-1 md:flex-none md:mr-3 float-left">
-                    <a class="inline-block py-4 px-4 mt-2 hover:bg-gray-600 hover:text-yellow-500 text-white no-underline focus:bg-gray-900 focus:text-yellow-500"
+                <li class="flex-1 md:flex-none md:mr-0 mr-3 float-left">
+                    <a class="inline-block py-4 px-4 mt-2 hover:bg-gray-600 hover:text-yellow-500 text-white no-underline focus:bg-gray-900 focus:text-yellow-500 md:ml-0 ml-2"
                        href="#">
                         <BellIcon size="24 "/>
                     </a>
                 </li>
-                <li class="flex-1 md:flex-none md:ml-0 float-right md:mr-3 m-2">
+                <li class="flex-1 md:flex-none md:ml-0 float-right md:mr-0 m-2">
                     <div class="relative inline-block cursor-pointer">
                         <button onclick="toggleDD('myDropdown')"
                                 class="drop-button hover:bg-gray-600 hover:text-yellow-500 text-white focus:outline-none focus:text-yellow-500 focus:bg-gray-900">
@@ -43,9 +43,9 @@
                             </svg>
                         </button>
                         <div id="myDropdown"
-                             class="dropdownlist absolute bg-gray-800 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
-                            <div class=" w-full px-16"></div>
-                            <a href="#"
+                             class="dropdownlist absolute bg-gray-800 text-white right-0 p-2 overflow-auto z-30 invisible">
+                            <div class=" w-full px-16 pl-20"></div>
+                            <a href="/profile"
                                class="p-2 hover:bg-gray-700 text-white text-sm no-underline hover:no-underline block hover:text-yellow-500 focus:text-yellow-500 focus:bg-gray-900">
                                 <i class="fa fa-user fa-fw"></i> <span>Profile</span></a>
                             <a href="#"

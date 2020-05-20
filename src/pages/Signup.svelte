@@ -2,9 +2,13 @@
     input:checked + svg {
         display: block;
     }
+
+    .bg {
+        background-image: url('../../public/i/background_image.jpg');
+    }
 </style>
 
-<div class="flex bg-indigo-700 w-full h-screen" style="background-image: url('/i/background_image.jpg')">
+<div class="bg flex bg-indigo-700 w-full h-screen">
     <div class="w-1/2">
         <div class="flex-col text-white m-8 ml-12 px-10 border-white">
             <div class="text-4xl text-yellow-500 uppercase font-bold">
@@ -29,9 +33,8 @@
                 <span>Sign Up</span>
             </div>
             <div class="text-gray-600 mt-6">
-                <span>Already have an account?</span> <a href="#"
-                                                         class="text-indigo-700 cursor-pointer hover: text-indigo-800 hover:underline">Log
-                in</a>
+                <span>Already have an account?</span>
+                <a href="#" class="text-indigo-700 cursor-pointer hover: text-indigo-800 hover:underline">Log in</a>
             </div>
             <div class="mt-8">
                 <div class="mb-4">

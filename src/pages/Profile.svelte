@@ -1,6 +1,15 @@
-<div class="flex-col">
-    <div class="w-full h-12">
+<script>
+    import ProfileMenu from '../components/ProfileMenu.svelte';
+    import ProfileTop from '../components/ProfileTop.svelte';
+    import ProfileMain from '../components/ProfileMain.svelte';
+</script>
 
+<div class="flex-col w-full z-0 text-lg">
+    <div class="w-full md:h-12 h-24">
     </div>
-    <h1 class="bg-gray-300 w-full text-6xl">This is you</h1>
+    <ProfileTop/>
+    <ProfileMenu/>
+    <ProfileMain/>
+    <div class="w-full md:h-12 h-20">
+    </div>
 </div>
