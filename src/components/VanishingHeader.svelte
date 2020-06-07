@@ -36,18 +36,18 @@
     headerClass = updateClass(y);
 </script>
 
-<style>
-    .show {
-        display: flex;
-    }
-
-    .hide {
-        display: none;
-    }
-</style>
-
 <svelte:window bind:scrollY={y}/>
 
 <div use:setTransitionDuration class={headerClass}>
+    <style>
+        .show {
+            display: flex;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+
     <slot/>
 </div>
