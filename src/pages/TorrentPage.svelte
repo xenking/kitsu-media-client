@@ -1,3 +1,7 @@
+<script>
+    import TorrentComp from "../components/TorrentComp.svelte";
+</script>
+
 <div class="w-full ml-2 text-lg">
     <div class="w-full md:h-12 h-32">
     </div>
@@ -27,7 +31,12 @@
         </div>
         <div class="p-2">
             <div class="py-2 border-2 border-gray-500 rounded-lg w-full">
-
+                <TorrentComp/>
+                <TorrentComp/>
+                <TorrentComp/>
+                <TorrentComp/>
+                <TorrentComp/>
+                <TorrentComp/>
             </div>
         </div>
     </div>

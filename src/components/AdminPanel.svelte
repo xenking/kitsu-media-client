@@ -48,9 +48,9 @@
                             <a href="/profile"
                                class="p-2 hover:bg-gray-700 text-white text-sm no-underline hover:no-underline block hover:text-yellow-500 focus:text-yellow-500 focus:bg-gray-900">
                                 <i class="fa fa-user fa-fw"></i> <span>Profile</span></a>
-                            <a href="#"
+                            <a href="/admin"
                                class="p-2 hover:bg-gray-700 text-white  text-sm no-underline hover:no-underline block hover:text-yellow-500 focus:text-yellow-500 focus:bg-gray-900">
-                                <i class="fa fa-cog fa-fw"></i><span>Settings</span></a>
+                                <i class="fa fa-cog fa-fw"></i><span>AdminPanel</span></a>
                             <a href="#"
                                class="p-2 hover:bg-gray-700 text-white  text-sm no-underline hover:no-underline block hover:text-yellow-500 focus:text-yellow-500 focus:bg-gray-900">
                                 <i class="fas fa-sign-out-alt fa-fw"></i><span>Log Out</span></a>

@@ -7,6 +7,7 @@
 
 	import Menu from './components/Menu.svelte';
 	import AdminPanel from './components/AdminPanel.svelte';
+
     // import Signup from './pages/Signup.svelte';
 	import Home from './pages/Anime.svelte';
 	import Profile from './pages/Profile.svelte';
@@ -15,7 +16,8 @@
 	import VanishingHeader from "./components/VanishingHeader.svelte";
 	import Watch from "./pages/AnimeWatch.svelte";
     import Topic from "./pages/TopicPage.svelte";
-    import Torrents from "./pages/TorrentPage.svelte"
+	import Torrents from "./pages/TorrentPage.svelte";
+	import Admin from "./pages/Admin.svelte";
 </script>
 
 <Tailwindcss />
@@ -34,6 +36,7 @@
 			<Route path="/watch" component="{Watch}"/>
 			<Route path="/topic" component="{Topic}"/>
             <Route path="/torrents" component="{Torrents}"/>
+			<Route path="/admin" component="{Admin}"/>
 			<NotFound>
 				<NotFoundPage/>
 			</NotFound>
