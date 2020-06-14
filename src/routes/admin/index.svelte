@@ -3,19 +3,19 @@
         Users
     </div>
     <div class="admin-users">
-        <div>
+        <div class="admin-user">
             User
         </div>
-        <div>
+        <div class="admin-user">
             User
         </div>
-        <div>
+        <div class="admin-user">
             User
         </div>
-        <div>
+        <div class="admin-user">
             User
         </div>
-        <div>
+        <div class="admin-user">
             User
         </div>
     </div>

@@ -11,19 +11,16 @@
     function yourFeed() {
         tab = "feed";
         tag = null;
-        media = null
     }
 
     function globalfeed() {
         tab = "all";
         tag = null;
-        media = null
     }
 
     function newpost() {
         tab = "newpost";
         tag = null;
-        media = null
     }
 
 </script>

@@ -16,7 +16,7 @@
     let mediaCount;
 
     {
-        const endpoint = tab === 'media' ? 'medai/feed' : 'media';
+        const endpoint = tab === 'media' ? 'media/feed' : 'media';
         const page_size = tab === 'feed' ? 5 : 10;
 
         let params = `limit=${page_size}&offset=${(p - 1) * page_size}`;

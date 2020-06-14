@@ -108,7 +108,7 @@
                     </div>
 
                     <span>Madoca Magica</span>
-                    <a rel="prefetch">
+                    <a rel="prefetch" href="#">
                         <div class="media-img ">
 
                         </div>

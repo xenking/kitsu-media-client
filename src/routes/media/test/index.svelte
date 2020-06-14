@@ -6,7 +6,7 @@
                 </div>
             </a>
             <div class="dropdown show">
-                <a href="#" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="nav-link ">
+                <a href="#" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-header">
                     Add to list
                 </a>
                 <div class="nav-dropdown dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuLink">
@@ -14,6 +14,7 @@
                     <a class="dropdown-item" rel='prefetch' role="button" aria-pressed="true">Planned</a>
                     <a class="dropdown-item" rel='prefetch' role="button" aria-pressed="true">On hold</a>
                     <a class="dropdown-item" rel='prefetch' role="button" aria-pressed="true">Watched</a>
+                    <a class="dropdown-item" rel='prefetch' role="button" aria-pressed="true">Watching</a>
                 </div>
             </div>
         </div>

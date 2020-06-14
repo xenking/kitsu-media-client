@@ -16,7 +16,7 @@
     }
 
     onMount(async () => {
-        ({tags} = await api.get('tags'));
+        ({tags} = await api.get('articles/tags'));
     });
 </script>
 

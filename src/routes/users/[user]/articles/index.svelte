@@ -21,6 +21,7 @@
 
     let user = $session.user;
     let isFavorite = false;
+
     isUser = user && (profile.username === user.username);
 
 </script>
