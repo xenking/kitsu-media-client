@@ -1,7 +1,9 @@
-<script>
-    import Editor from './_Editor.svelte';
-
-    let article = {title: '', description: '', body: '', tagList: []};
+<script context="module">
+    export function preload({params}, {user}) {
+        if (user) {
+            this.redirect(302, `/editor/article`);
+        } else {
+            this.redirect(302, `/`);
+        }
+    }
 </script>
-
-<Editor {article}/>

@@ -43,8 +43,8 @@
         </div>
     {:else}
         <div>
-            {#each medias as medias (medias.slug)}
-                <MediasPreview {medias} user={$session.user}/>
+            {#each medias as media (media.slug)}
+                <MediasPreview {media} user={$session.user}/>
             {/each}
 
             <ListPagination {mediasCount} page={parseInt($page.params.user, 10)}/>

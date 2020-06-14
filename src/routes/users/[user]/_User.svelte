@@ -6,7 +6,7 @@
     export let profile;
     export let user;
 
-    isUser = user && (profile.username === user.username);
+    $: isUser = user && (profile.username === user.username);
 
     async function toggleFollowing() {
         if (!user) return goto('/login');

@@ -7,9 +7,9 @@
 </script>
 
 <script>
-    import Home from './_components/Articles.svelte';
+    import Articles from './_components/Articles.svelte';
 
     export let p;
 </script>
 
-<Home {p}/>
+<Articles {p}/>

@@ -21,7 +21,7 @@
 
     let user = $session.user;
     let isMedia = true;
-    isUser = user && (profile.username === user.username);
+    $: isUser = user && (profile.username === user.username);
 
 </script>
 

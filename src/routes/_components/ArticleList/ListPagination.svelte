@@ -4,7 +4,7 @@
 
     let range;
 
-    {
+    $:{
         range = [];
         for (let i = 0; i < Math.ceil(articlesCount / 10); ++i) {
             range.push(i);

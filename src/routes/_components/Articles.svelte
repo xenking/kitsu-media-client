@@ -1,6 +1,6 @@
 <script>
     import {onMount} from 'svelte';
-    import MainView from './MainView/index.svelte';
+    import MainView from './MainView/articles.svelte';
     import Tags from './ArticlesTags.svelte';
     import * as api from 'api.js';
 
@@ -39,7 +39,7 @@
 
             <div class="col-md-3">
                 <div class="sidebar">
-                    <p>Popular Tags</p>
+                    <p>Popular Article Tags</p>
                     <Tags {tags} on:select='{setTags}'/>
                 </div>
             </div>

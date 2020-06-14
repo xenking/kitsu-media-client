@@ -15,7 +15,7 @@
     let articles;
     let articlesCount;
 
-    {
+    $: {
         const endpoint = tab === 'feed' ? 'articles/feed' : 'articles';
         const page_size = tab === 'feed' ? 5 : 10;
 
@@ -26,7 +26,7 @@
         query = `${endpoint}?${params}`;
     }
 
-    query && getData();
+    $: query && getData();
 
     async function getData() {
         articles = null;

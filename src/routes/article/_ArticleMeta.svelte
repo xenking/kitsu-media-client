@@ -5,7 +5,7 @@
     export let article;
     export let user;
 
-    canModify = user && article.author.username === user.username;
+    $: canModify = user && article.author.username === user.username;
 
     async function remove() {
         await api.del(`articles/${article.slug}`, user && user.token);
@@ -27,7 +27,7 @@
 
     {#if canModify}
         <span>
-			<a href='/editor/{article.slug}' class="btn btn-outline-secondary btn-sm">
+			<a href='/editor/media/{article.slug}' class="btn btn-outline-secondary btn-sm">
 				<i class="ion-edit"/> Edit Article
 			</a>
 

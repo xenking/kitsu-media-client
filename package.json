@@ -1,7 +1,7 @@
 {
-  "name": "svelte-realworld",
-  "description": "A Svelte/Sapper implementation of RealWorld",
-  "version": "0.0.1",
+  "name": "kitsu-media-client",
+  "description": "A Client for kitsu.media",
+  "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build",
@@ -9,8 +9,7 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "(npm run build && export PORT=3100 && node __sapper__/build) & cypress run",
-    "deploy": "make deploy"
+    "test": "(npm run build && export PORT=3100 && node __sapper__/build) & cypress run"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -42,12 +41,5 @@
     "sapper": "^0.27.8",
     "svelte": "^3.12.1",
     "svelte-loader": "^2.13.4"
-  },
-  "now": {
-    "alias": "svelte-realworld.now.sh",
-    "files": [
-      "__sapper__",
-      "yarn.lock"
-    ]
   }
 }
