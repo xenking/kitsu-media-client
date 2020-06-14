@@ -30,6 +30,8 @@ module.exports = {
       'secondary': '#8a8e99',
       'yellow': '#ffcf00',
       'indigo': '#7e60fa',
+      'indigo2': '#a892fc',
+      'indigo3': '#9e56bf',
       'black': '#3a415e',
       'gray': '#e5dffa'
     },
@@ -46,4 +48,4 @@ module.exports = {
   plugins: [
     require('@tailwindcss/custom-forms')
   ],
-}
+};

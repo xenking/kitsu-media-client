@@ -45,7 +45,7 @@
                         <div id="myDropdown"
                              class="dropdownlist absolute bg-gray-800 text-white right-0 p-2 overflow-auto z-30 invisible">
                             <div class=" w-full px-16 pl-20"></div>
-                            <a href="/profile"
+                            <a href="/users"
                                class="p-2 hover:bg-gray-700 text-white text-sm no-underline hover:no-underline block hover:text-yellow-500 focus:text-yellow-500 focus:bg-gray-900">
                                 <i class="fa fa-user fa-fw"></i> <span>Profile</span></a>
                             <a href="/admin"

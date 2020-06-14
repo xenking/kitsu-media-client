@@ -31,7 +31,7 @@
 			</VanishingHeader>
 			<Menu/>
 			<Route path="/" component="{Home}"/>
-			<Route path="/profile" component="{Profile}"/>
+            <Route path="/users" component="{Profile}"/>
 			<Route path="/news" component="{News}"/>
 			<Route path="/watch" component="{Watch}"/>
 			<Route path="/topic" component="{Topic}"/>
