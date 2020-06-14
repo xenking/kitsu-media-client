@@ -1,7 +1,7 @@
 <script>
     import {onMount} from 'svelte';
     import MainView from './MainView/index.svelte';
-    import Tags from './NewsTags.svelte';
+    import Tags from './ArticlesTags.svelte';
     import * as api from 'api.js';
 
     export let p = 1;

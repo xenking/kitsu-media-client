@@ -16,22 +16,15 @@
         <a rel='prefetch' class="navbar-brand" href=".">Kitsu media</a>
         <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item">
-                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/'}" href="/">Home</a>
+                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/'}" href="/">Articles</a>
             </li>
             <li class="nav-item">
-                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/'}" href="/media">Media</a>
+                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/medias'}" href="/medias">Medias</a>
             </li>
             {#if $session.user}
-            <!--				<li class="nav-item">-->
-                <!--					<a rel='prefetch' href="/settings" class="nav-link" class:active="{$page.path === '/settings'}">-->
-                <!--						<i class="ion-gear-a"></i>&nbsp;Settings-->
-                <!--					</a>-->
-                <!--				</li>-->
-
                 <li class="nav-item">
                     <div class="dropdown show">
                         <a href="#" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="nav-link ">
-                            <!--							<img src={$user.image} class="user-pic" alt={$user.username}>-->
                             {$session.user.username}
                         </a>
                         <div class="nav-dropdown dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
@@ -49,12 +42,6 @@
                         Sign in
                     </a>
                 </li>
-
-                <!--				<li class="nav-item">-->
-                <!--					<a rel='prefetch' href="/register" class="nav-link" class:active="{$page.path === '/register'}">-->
-                <!--						Sign up-->
-                <!--					</a>-->
-                <!--				</li>-->
             {/if}
         </ul>
     </div>

@@ -1,8 +1,8 @@
 <script>
     import {onMount} from 'svelte';
-    import MainView from '../media/_Media.svelte';
-    import Tags from '../_components/MediaTags.svelte';
-    import * as api from 'api.js';
+    import MainView from './MainViewMedias/index.svelte';
+    import Tags from './MediaTags.svelte';
+    import * as api from '../../node_modules/api';
 
     export let p = 1;
 

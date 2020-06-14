@@ -1,6 +1,6 @@
 <script>
     import {stores} from '@sapper/app';
-    import MediaPreview from './MediaPreview.svelte';
+    import MediasPreview from './MediasPreview.svelte';
     import ListPagination from './ListPagination.svelte';
     import * as api from 'api.js';
 
@@ -12,12 +12,12 @@
     const {session, page} = stores();
 
     let query;
-    let media;
-    let mediaCount;
+    let medias;
+    let mediasCount;
 
     {
-        const endpoint = tab === 'media' ? 'media/feed' : 'media';
-        const page_size = tab === 'feed' ? 5 : 10;
+        const endpoint = tab === 'medias' ? 'medias/feed' : 'medias';
+        const page_size = tab === 'medias' ? 5 : 10;
 
         let params = `limit=${page_size}&offset=${(p - 1) * page_size}`;
         if (tab === 'tag') params += `&tag=${tag}`;
@@ -29,20 +29,26 @@
     query && getData();
 
     async function getData() {
-        media = null;
+        medias = null;
 
         // TODO do we need some error handling here?
-        ({media, mediaCount} = await api.get(query, $session.user && $session.user.token));
+        ({medias, mediasCount} = await api.get(query, $session.user && $session.user.token));
     }
 </script>
 
-{#if media}
-    {#if media.length === 0}
+{#if medias}
+    {#if medias.length === 0}
         <div class="article-preview">
             No media are here... yet.
         </div>
     {:else}
-        <MediaPreview/>
+        <div>
+            {#each medias as medias (medias.slug)}
+                <MediasPreview {medias} user={$session.user}/>
+            {/each}
+
+            <ListPagination {mediasCount} page={parseInt($page.params.user, 10)}/>
+        </div>
     {/if}
 {:else}
     <div class="media-preview">Loading...</div>
