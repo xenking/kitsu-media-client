@@ -2,6 +2,8 @@
   "name": "kitsu-media-client",
   "description": "A Client for kitsu.media",
   "version": "1.0.0",
+  "repository": "https://github.com/xenking/kitsu-media-client",
+  "license": "MIT",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build",

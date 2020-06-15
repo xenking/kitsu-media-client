@@ -2,8 +2,11 @@
 !/Dockerfile
 !/package.json
 !/package-lock.json
+!/rollup.config.js
+!/Caddyfile
 !/__sapper__
 /__sapper__/*
-!/__sapper__/build
+!/__sapper__/export
+!/src
 !/static
 !/content
