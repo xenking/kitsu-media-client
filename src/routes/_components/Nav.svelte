@@ -23,10 +23,10 @@
                 <a rel='prefetch' class="nav-link" class:active="{$page.path === '/medias'}" href="/medias">
                     <i class="ion-ios-eye-outline"/>&nbsp;Medias</a>
             </li>
-            <li class="nav-item">
-                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/media'}" href="/search">
-                    <i class="ion-search"/>&nbsp;Search</a>
-            </li>
+            <!--            <li class="nav-item">-->
+            <!--                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/search'}" href="/search">-->
+            <!--                    <i class="ion-search"/>&nbsp;Search</a>-->
+            <!--            </li>-->
             {#if $session.user}
                 <li class="nav-item">
                     <div class="dropdown show">

@@ -7,10 +7,6 @@ html {
     min-height: 100vh;
     padding-bottom: 100px
 }
-
-/*!* Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
-* Copyright 2011-2016 Twitter, Inc.
-* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*//*!normalize.css commit fe56763 | MIT License | github.com/necolas/normalize.css*/
 html {
     font-family: Noto Sans, sans-serif;
     -ms-text-size-adjust: 100%;
@@ -7182,6 +7178,10 @@ footer .attribution {
     max-width: 23rem !important;
 }
 
+.anime-play .dropdown-header:focus{
+    color: white;
+}
+
 .dropdown-menu {
     width: 100% !important;
 }
@@ -7221,10 +7221,26 @@ footer .attribution {
 }
 
 .admin-page {
-    padding: 0 50%;
+    width: auto;
     display: inline-block;
     border-width: 2px;
     border-color: #3a415e;
+}
+
+.admin-page .row {
+    width: 100%;
+    margin: auto;
+}
+
+.admin-page .col {
+    width: 20rem;
+    margin: auto;
+    border-width: 2px;
+    border-color: gray;
+}
+
+.admin-page .col-sm {
+    width: 5rem;
 }
 
 .admin-users {
@@ -7234,9 +7250,11 @@ footer .attribution {
 }
 
 .admin-title {
-    width: auto;
+    margin: auto;
+    width: 100%;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+
 }
 
 .custom-select{
@@ -7272,4 +7290,25 @@ footer .attribution {
     .home-page .row{
         width: 100%;
     }
+}
+
+.admin-page {
+    width: 100%;
+}
+
+.admin-page .row {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.admin-page .col {
+    margin-left: 2rem;
+}
+
+.anime-page .tag-list {
+    width: 20rem;
+}
+
+th {
+    text-align: center;
 }

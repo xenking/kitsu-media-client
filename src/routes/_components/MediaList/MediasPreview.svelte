@@ -5,7 +5,6 @@
     export let user;
 
     async function toggleFavorite() {
-        // optimistic UI
         if (media.favorited) {
             media.favoritesCount -= 1;
             media.favorited = false;

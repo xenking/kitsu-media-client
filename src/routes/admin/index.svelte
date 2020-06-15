@@ -1,22 +1,8 @@
+<script>
+    import UserContainer from './_UsersContainer.svelte';
+
+</script>
+
 <div class="admin-page">
-    <div class="admin-title">
-        Users
-    </div>
-    <div class="admin-users">
-        <div class="admin-user">
-            User
-        </div>
-        <div class="admin-user">
-            User
-        </div>
-        <div class="admin-user">
-            User
-        </div>
-        <div class="admin-user">
-            User
-        </div>
-        <div class="admin-user">
-            User
-        </div>
-    </div>
+    <UserContainer p={1}/>
 </div>
