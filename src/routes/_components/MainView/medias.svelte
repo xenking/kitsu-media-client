@@ -30,7 +30,7 @@
 
             {#if tag}
                 <li class="nav-item">
-                    <a href="./medias" class='nav-link {tab === "tag" ? "active" : "" }' on:click='{() => tab = "tag"}'>
+                    <a href="/medias" class='nav-link {tab === "tag" ? "active" : "" }' on:click='{() => tab = "tag"}'>
                         <i class="ion-pound"></i> {tag}
                     </a>
                 </li>

@@ -22,7 +22,6 @@
     const {session} = stores();
 
     let commentErrors, comments = []; // we'll lazy-load these in onMount
-
     onMount(() => {
         api.get(`medias/${slug}/comments`).then((res) => {
             comments = res.comments;
@@ -37,13 +36,13 @@
 <div class="anime-page">
     <div class="anime-top">
         <MediaMeta {media} user={$session.user}/>
+        <ul class="tag-list">
+            {#each media.tagList as tag}
+                <li class="tag-default tag-pill tag-outline">
+                    {tag}
+                </li>
+            {/each}
+        </ul>
     </div>
-    <ul class="tag-list">
-        {#each media.tagList as tag}
-            <li class="tag-default tag-pill tag-outline">
-                {tag}
-            </li>
-        {/each}
-    </ul>
     <CommentContainer {slug} {comments} user={$session.user} errors={commentErrors}/>
 </div>
