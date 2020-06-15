@@ -7182,6 +7182,10 @@ footer .attribution {
     max-width: 23rem !important;
 }
 
+.anime-play .dropdown-header:focus{
+    color: white;
+}
+
 .dropdown-menu {
     width: 100% !important;
 }

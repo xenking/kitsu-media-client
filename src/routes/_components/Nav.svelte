@@ -24,7 +24,7 @@
                     <i class="ion-ios-eye-outline"/>&nbsp;Medias</a>
             </li>
             <li class="nav-item">
-                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/media'}" href="/search">
+                <a rel='prefetch' class="nav-link" class:active="{$page.path === '/search'}" href="/search">
                     <i class="ion-search"/>&nbsp;Search</a>
             </li>
             {#if $session.user}

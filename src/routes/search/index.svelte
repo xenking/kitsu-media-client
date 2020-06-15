@@ -1,5 +1,5 @@
 <script>
-    import Medias from '../_components/Medias.svelte';
+    import Search from '../_components/Search.svelte';
 </script>
 
-<Medias p={1}/>
+<Search p={1}/>
