@@ -14,12 +14,12 @@
 </script>
 
 <div class="article-meta">
-    <a href='/users/@{article.author.username}'>
+    <a href='/users/@{article.author.username}/articles'>
         <img src={article.author.image} alt={article.author.username}/>
     </a>
 
     <div class="info">
-        <a href='/users/@{article.author.username}' class="author"> {article.author.username}</a>
+        <a href='/users/@{article.author.username}/articles' class="author"> {article.author.username}</a>
         <span class="date">
 			{new Date(article.createdAt).toDateString()}
 		</span>

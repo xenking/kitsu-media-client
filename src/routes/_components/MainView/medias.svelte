@@ -2,7 +2,7 @@
     import {stores} from '@sapper/app';
     import MediaList from '../MediaList/index.svelte'
 
-    export let tab = 'all';
+    export let tab = "all";
     export let tag = null;
     export let p;
 
@@ -19,10 +19,10 @@
     }
 </script>
 
-<div class="col-md-9">
+<div class="col-sm-9">
     <div class="feed-toggle">
         <ul class="nav nav-pills outline-active">
-            <li>
+            <li class="nav-item">
                 <a href="/medias" class='nav-link {tab === "all" ? "active" : "" }' on:click='{globalmedia}'>
                     All Media
                 </a>
@@ -30,7 +30,7 @@
 
             {#if tag}
                 <li class="nav-item">
-                    <a href="." class='nav-link {tab === "tag" ? "active" : "" }' on:click='{() => tab = "tag"}'>
+                    <a href="./medias" class='nav-link {tab === "tag" ? "active" : "" }' on:click='{() => tab = "tag"}'>
                         <i class="ion-pound"></i> {tag}
                     </a>
                 </li>
@@ -47,7 +47,7 @@
 
         </ul>
     </div>
-
-    <MediaList {p} {tab} {tag}/>
-
+    <div class="media-all">
+        <MediaList {p} {tab} {tag}/>
+    </div>
 </div>

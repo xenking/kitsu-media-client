@@ -22,12 +22,12 @@
 
 <div class="article-preview">
     <div class="article-meta">
-        <a href='/users/@{article.author.username}'>
+        <a href='/users/@{article.author.username}/articles'>
             <img src={article.author.image} alt={article.author.username}/>
         </a>
 
         <div class="info">
-            <a class="author" href='/users/@{article.author.username}'> {article.author.username}
+            <a class="author" href='/users/@{article.author.username}/articles'> {article.author.username}
             </a>
             <span class="date">
 				{new Date(article.createdAt).toDateString()}

@@ -1,18 +1,18 @@
 <script>
-    export let MediasCount;
+    export let mediasCount;
     export let page;
 
     let range;
 
     {
         range = [];
-        for (let i = 0; i < Math.ceil(MediasCount / 10); ++i) {
+        for (let i = 0; i < Math.ceil(mediasCount / 10); ++i) {
             range.push(i);
         }
     }
 </script>
 
-{#if MediasCount > 10}
+{#if mediasCount > 10}
     <nav>
         <ul class="pagination">
 

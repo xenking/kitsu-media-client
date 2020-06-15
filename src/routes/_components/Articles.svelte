@@ -39,7 +39,7 @@
 
             <div class="col-md-3">
                 <div class="sidebar">
-                    <p>Popular Article Tags</p>
+                    <p>Popular Tags</p>
                     <Tags {tags} on:select='{setTags}'/>
                 </div>
             </div>

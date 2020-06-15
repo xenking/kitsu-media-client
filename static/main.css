@@ -2839,15 +2839,15 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-outline-secondary {
-    color: #ccc;
+    color: #ffffff;
     background-image: none;
     background-color: transparent;
-    border-color: #ccc
+    border-color: #ffcf00
 }
 
 .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #ccc;
+    background-color: #ffcf00;
     border-color: #ccc
 }
 
@@ -2995,15 +2995,15 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-outline-danger {
-    color: #b85c5c;
+    color: #ffffff;
     background-image: none;
     background-color: transparent;
-    border-color: #b85c5c
+    border-color: #ff4548
 }
 
 .btn-outline-danger:hover {
     color: #fff;
-    background-color: #b85c5c;
+    background-color: #ff383c;
     border-color: #b85c5c
 }
 
@@ -4797,9 +4797,7 @@ base::-moz-progress-bar, .progress[value] {
     margin-bottom: 1rem
 }
 
-.media-body {
-    flex: 1
-}
+
 
 .media-middle {
     align-self: center
@@ -6912,6 +6910,11 @@ footer .attribution {
     width: 30px
 }
 
+.anime-page .comment-form .card-footer .comment-author-img {
+    height: 30px;
+    width: 30px
+}
+
 .article-page .card {
     border: 1px solid #e5e5e5;
     box-shadow: none !important
@@ -6925,6 +6928,14 @@ footer .attribution {
 }
 
 .article-page .card .comment-author-img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border-radius: 30px
+}
+
+.anime-page .card .comment-author-img {
     display: inline-block;
     vertical-align: middle;
     height: 20px;
@@ -7060,26 +7071,42 @@ footer .attribution {
 }
 
 .media-preview {
-    width: auto;
+    width: 14rem;
     height: auto;
-    border-top: 1px;
     border-color: #8a8e99;
     padding: 1.5rem 0;
     margin-left: 15px;
 }
 
 .media-img {
-    width: 200px;
+    width: 220px;
     height: 300px;
-    background-color: #8a8e99;
+    background-color: gray;
+    border-color: #8a8e99;
+    border-width: 1px;
 }
 
 .media-info {
     display: inline-flex;
 }
 
+.media-studio{
+    float: left;
+}
+
 .media-date {
-    margin-left: 5.75rem;
+    float: right;
+    width: 9rem;
+    margin-left: 3rem;
+}
+
+.media-favorite{
+    position: center;
+
+}
+
+.media-favorite .btn-outline-primary{
+    color: white;
 }
 
 .admin-page {
@@ -7210,4 +7237,39 @@ footer .attribution {
     width: auto;
     display: inline-block;
     font-size: 1.5rem;
+}
+
+.custom-select{
+    margin-bottom: 5px;
+    margin-left: 1rem;
+}
+
+.input-group-text{
+    font-size: 1.25rem;
+}
+
+.anime-page .btn-outline-danger{
+    color:red;
+}
+
+.anime-page .btn-outline-danger:hover{
+    color:white;
+}
+
+.anime-page .btn-outline-secondary{
+    color:#ffcf00;
+}
+
+.anime-page .btn-outline-secondary:hover{
+    color:black;
+}
+
+.anime-edit{
+    margin:5px;
+}
+
+@media (min-width: 700px){
+    .home-page .row{
+        width: 100%;
+    }
 }

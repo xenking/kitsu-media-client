@@ -15,6 +15,8 @@
     let medias;
     let mediasCount;
 
+    let second = 2;
+
     {
         const endpoint = tab === 'medias' ? 'medias/feed' : 'medias';
         const page_size = tab === 'medias' ? 5 : 10;
@@ -26,7 +28,7 @@
         query = `${endpoint}?${params}`;
     }
 
-    query && getData();
+    $: query && getData();
 
     async function getData() {
         medias = null;
@@ -38,17 +40,16 @@
 
 {#if medias}
     {#if medias.length === 0}
-        <div class="article-preview">
+        <div class="media-preview">
             No media are here... yet.
         </div>
     {:else}
-        <div>
-            {#each medias as media (media.slug)}
-                <MediasPreview {media} user={$session.user}/>
-            {/each}
-
+            <div class="row">
+                {#each medias as media (media.slug)}
+                    <MediasPreview {media} user={$session.user}/>
+                {/each}
+            </div>
             <ListPagination {mediasCount} page={parseInt($page.params.user, 10)}/>
-        </div>
     {/if}
 {:else}
     <div class="media-preview">Loading...</div>

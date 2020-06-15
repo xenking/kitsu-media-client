@@ -21,39 +21,39 @@
 </script>
 
 <div class="media-preview">
-    <div class="media-meta">
-        <a href='/users/@{media.author.username}'>
-            <img src={media.author.image} alt={media.author.username}/>
-        </a>
+    <div>
+        Added by <a href='/users/@{media.author.username}/articles'>{media.author.username}</a>
+    </div>
+    <a href='/media/{media.slug}'>
+        {media.title}
+    </a>
+    <div class="media-img">
+        <img src={media.poster} class="media-img" alt={media.title}/>
 
-        <div class="info">
-            <a class="author" href='/users/@{media.author.username}'> {media.author.username}
-            </a>
-            <span class="date">
-				{new Date(media.createdAt).toDateString()}
-			</span>
-        </div>
-
-        {#if user}
-            <div class="pull-xs-right">
-                <button class='btn btn-sm {media.favorited ? "btn-primary" : "btn-outline-primary"}'
-                        on:click={toggleFavorite}>
-                    <i class="ion-heart"></i> {media.favoritesCount}
-                </button>
-            </div>
-        {/if}
     </div>
 
-    <a href='/media/{media.slug}' rel='prefetch' class="preview-link">
-        <h1>{media.title}</h1>
-        <p>{media.description}</p>
-        <span>Read more...</span>
-        <ul class="tag-list">
-            {#each media.tagList as tag}
-                <li class="tag-default tag-pill tag-outline">
-                    {tag}
-                </li>
-            {/each}
-        </ul>
-    </a>
+    <div class="media-info">
+        <div class="media-studio">
+            {media.studio}
+        </div>
+        <div class="media-date">
+            {new Date(media.createdAt).toDateString()}
+        </div>
+
+    </div>
+    <ul class="tag-list">
+        {#each media.tagList as tag}
+            <li class="tag-default tag-pill tag-outline">
+                {tag}
+            </li>
+        {/each}
+    </ul>
+<!--    {#if user}-->
+<!--        <div class="media-favorite">-->
+<!--            <button class='btn btn-sm {media.favorited ? "btn-primary" : "btn-outline-primary"}'-->
+<!--                    on:click={toggleFavorite}>-->
+<!--                <i class="ion-heart"></i> {media.favoritesCount}-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    {/if}-->
 </div>

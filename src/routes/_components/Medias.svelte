@@ -2,7 +2,7 @@
     import {onMount} from 'svelte';
     import MainView from './MainView/medias.svelte';
     import Tags from './MediaTags.svelte';
-    import * as api from '../../node_modules/api';
+    import * as api from 'api';
 
     export let p = 1;
 

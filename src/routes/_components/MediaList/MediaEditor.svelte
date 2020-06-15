@@ -66,25 +66,25 @@
                         </fieldset>
 
                         <fieldset class="form-group">
-                            <input class="form-control form-control-lg" type="text" placeholder="Studio"
+                            <input class="form-control" type="text" placeholder="Studio"
                                    bind:value={media.studio}>
                         </fieldset>
 
                         <fieldset class="form-group">
-                            <input class="form-control form-control-lg" type="number" max="1024" min="0"
+                            <input class="form-control" type="number" max="1024" min="0"
                                    placeholder="Number of episodes"
                                    bind:value={media.episodes}>
                         </fieldset>
 
                         <fieldset class="form-group">
-                            <input class="form-control form-control-lg" type="date" placeholder="Aired in"
+                            <input class="form-control" type="date" placeholder="Aired in"
                                    bind:value={airingDate}>
                         </fieldset>
 
                         <fieldset class="form-group">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <label class="input-group-text" for="typeSelected">Type</label>
+                                    <label class="input-group-text" for="typeSelected">Type:</label>
                                 </div>
                                 <select class="custom-select" id="typeSelected" bind:value={media.type}>
                                     <option value="TV">TV</option>
@@ -96,7 +96,7 @@
                         </fieldset>
 
                         <fieldset class="form-group">
-                            <input class="form-control form-control-lg" type="text" placeholder="Poster url"
+                            <input class="form-control" type="text" placeholder="Poster url"
                                    bind:value={media.poster}>
                         </fieldset>
 
