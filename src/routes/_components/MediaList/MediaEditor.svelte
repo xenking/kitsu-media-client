@@ -1,5 +1,6 @@
 <script>
     import {goto, stores} from '@sapper/app';
+    import {onMount} from 'svelte';
     import ListErrors from '../ListErrors.svelte';
     import * as api from 'api';
 
@@ -8,7 +9,7 @@
 
     let inProgress = false;
     let errors;
-    let airingDate;
+    let airingDate
 
     const {session} = stores();
 
@@ -36,6 +37,24 @@
 
         inProgress = false;
     }
+
+
+    let date, month, day, year;
+
+    onMount(() => {
+        date = new Date(media.airingDate)
+        month = '' + (date.getMonth() + 1);
+        day = '' + date.getDate();
+        year = date.getFullYear();
+
+        if (month.length < 2)
+            month = '0' + month;
+        if (day.length < 2)
+            day = '0' + day;
+
+        airingDate = [year, month, day].join('-');
+        console.log(airingDate)
+    })
 
     function enter(node, callback) {
         function onkeydown(event) {
@@ -120,7 +139,11 @@
 
                         <button class="btn btn-lg pull-xs-right btn-primary" type="button" disabled={inProgress}
                                 on:click={publish}>
-                            Add new media
+                            {#if slug}
+                                Update media
+                            {:else}
+                                Add new media
+                            {/if}
                         </button>
                     </fieldset>
                 </form>

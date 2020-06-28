@@ -14,14 +14,14 @@
     const {session, page} = stores();
 
     let admin = $session.user;
-    {
+    $: {
         const page_size = 10;
 
         let params = `limit=${page_size}&offset=${(p - 1) * page_size}`;
         query = `admin/users?${params}`;
     }
 
-    query && getData();
+    $: query && getData();
 
     // $: isUser = user && (profile.username === user.username);
 
@@ -41,7 +41,7 @@
             <th scope="col"></th>
         </tr>
         </thead>
-        {#each users as user, i (user.username)}
+        {#each users as user, i (user.user.username)}
             {#if user.user.username !== admin.username}
                 <User {user} {admin} on:deleted='{() => users = users.filter((_, index) => i !== index)}'/>
             {/if}

@@ -27,7 +27,7 @@
 
     {#if canModify}
         <span>
-			<a href='/editor/media/{article.slug}' class="btn btn-outline-secondary btn-sm">
+			<a href='/editor/article/{article.slug}' class="btn btn-outline-secondary btn-sm">
 				<i class="ion-edit"/> Edit Article
 			</a>
 

@@ -14,7 +14,7 @@ RUN npm ci --production --unsafe-perm
 
 # This stage only needs the compiled Sapper application
 # and the runtime dependencies.
-FROM mhart/alpine-node:slim-12
+FROM mhart/alpine-node:12
 WORKDIR /app
 COPY --from=build-app /app/__sapper__ ./__sapper__
 COPY --from=build-app /app/static ./static

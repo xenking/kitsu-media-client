@@ -87,7 +87,11 @@
 
                         <button class="btn btn-lg pull-xs-right btn-primary" type="button" disabled={inProgress}
                                 on:click={publish}>
-                            Publish Article
+                            {#if slug}
+                                Update Article
+                            {:else}
+                                Publish Article
+                            {/if}
                         </button>
                     </fieldset>
                 </form>

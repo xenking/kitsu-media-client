@@ -6615,8 +6615,8 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 .tag-default.tag-outline {
-    border: 1px solid #ddd;
-    color: #aaa !important;
+    border: 1px solid #7e60fa;
+    color: #7e60fa !important;
     background: 0 0 !important
 }
 

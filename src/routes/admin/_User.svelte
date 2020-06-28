@@ -1,6 +1,6 @@
 <script>
     import {createEventDispatcher} from 'svelte';
-    import * as api from '../../node_modules/api';
+    import * as api from 'api.js';
 
     export let admin;
     export let user;

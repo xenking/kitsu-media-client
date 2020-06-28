@@ -15,7 +15,7 @@
     let medias;
     let mediasCount;
 
-    {
+    $: {
         const endpoint = tab === 'medias' ? 'medias/feed' : 'medias';
 
         const page_size = tab === 'medias' ? 5 : 10;
@@ -27,7 +27,7 @@
         query = `${endpoint}?${params}`;
     }
 
-    query && getData();
+    $: query && getData();
 
     async function getData() {
         medias = null;
